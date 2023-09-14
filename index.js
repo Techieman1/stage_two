@@ -7,10 +7,10 @@ const port =   process.env.PORT || 4000
 connect()
 app.use(json())
 app.use("/", personRouter)
-// app.get("/",(req,res)=>{
-//     res.send("hello everyone")
+app.get("/",(req,res)=>{
+    res.send("hello everyone")
     
-// })
+})
 app.listen(port, ()=>{
     console.log(`listening to port ${port}`)
 })
